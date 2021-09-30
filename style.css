@@ -239,10 +239,10 @@ input[type=text], select, textarea {
         padding-bottom: 30px
   }
   div.gallery{
-  margin: 10px;
-  float: left;
+  margin:20px 14%;
+  float: right;
   border: 1px solid #ccc;
-  width: 180px;
+  width: 20%;
   }
   div.gallery:hover {
     border: 1px solid #777;
