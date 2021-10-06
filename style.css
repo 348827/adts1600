@@ -238,6 +238,19 @@ input[type=text], select, textarea {
     animation: fade-in 10s;
         padding-bottom: 30px
   }
+  #argus > img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    font-size: 0.7em;
+    animation: fade-in 10s;
+  }
+  #argus > figcaption{
+    font-size: 0.7em;
+    animation: fade-in 10s;
+    padding-bottom: 30px;
+    margin-left: 25%;
+  }
   div.gallery{
   margin:20px 14%;
   float: right;
