@@ -252,10 +252,12 @@ input[type=text], select, textarea {
     margin-left: 25%;
   }
   div.gallery{
-  margin:20px 14%;
-  float: right;
+  display: inline-block;
+  position: relative;
+  margin-left: 12%;
+  margin-bottom: 30px;
   border: 1px solid #ccc;
-  width: 20%;
+  width: 8%;
   }
   div.gallery:hover {
     border: 1px solid #777;
