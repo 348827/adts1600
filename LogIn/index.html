@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+    <header>
+        <div class=left> <img src="../img/kitsense_transparent_white.png" alt="kitsense_logo kitsense_transparent_white"></div>
+        <div class=right><img src="../img/Kitsense_text_white (1).png" alt="Kitsense_text_white"></div>
+    
+    </header>
+    <div class=navbar>
+        <a href="../index.html">Home</a>
+        <a href="../Products/index.html">Products</a>
+        <a href="../About/index.html">About us</a>
+        <a href="../contact/index.html">Contact us</a>
+    </div>
+
+    <body>
+
+        <button onclick="myFunction()">Start new Session</button>
+
+        <div id="myDIV">
+        This is my DIV element.
+        </div>
+        <div id="divMyVideo">
+
+
+        
+        <video id="myVideo" width="460" height="auto">
+          <source src="../img/20211007_124749_1_1.mp4" type="video/mp4">
+          
+        </video>
+        <button onclick="playVid()" type="button">Play Video</button>
+        <button onclick="pauseVid()" type="button">Pause Video</button><br> 
+        <script> 
+        var vid = document.getElementById("myVideo"); 
+        
+        function playVid() { 
+          vid.play(); 
+        } 
+        
+        function pauseVid() { 
+          vid.pause(); 
+        } 
+        function myFunction() {
+            var x = document.getElementById("myVideo");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+  }
+}
+        </script> 
+        </div>
+        </body> 
+        </html>
