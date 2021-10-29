@@ -5,40 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../styllogin.css"/>
 </head>
 <body>
     <header>
         <div class=left> <img src="../img/kitsense_transparent_white.png" alt="kitsense_logo kitsense_transparent_white"></div>
-        <div class=right><img src="../img/Kitsense_text_white (1).png" alt="Kitsense_text_white"></div>
+        <div class=right><img src="../img/Kitsense_argus_interface.png" alt="Kitsense_text_white"></div>
     
     </header>
-    <div class=navbar>
-        <a href="../index.html">Home</a>
-        <a href="../Products/index.html">Products</a>
-        <a href="../About/index.html">About us</a>
-        <a href="../contact/index.html">Contact us</a>
-    </div>
+   
 
-    <body>
-
+    <body class=loginbody>
+        <div class="session">
         <button onclick="myFunction()">Start new Session</button>
-
-        <div id="myDIV">
-        This is my DIV element.
+        <button onclick="myFunction2()">View saved Data</button>
         </div>
         <div id="divMyVideo">
-
+            <ul>Parameters
+                <li>IP: 192.168.10.34</li>
+                <li>ID: Argus01</li>
+                <li>Signal: Excellent</li>
+                <li>Battery: 100%</li>
+    
+            </ul>
 
         
         <video id="myVideo" width="460" height="auto">
           <source src="../img/20211007_124749_1_1.mp4" type="video/mp4">
           
         </video>
-        <button onclick="playVid()" type="button">Play Video</button>
-        <button onclick="pauseVid()" type="button">Pause Video</button><br> 
+        <button onclick="playVid()" type="button">Show Argus Stream</button>
+        <button onclick="pauseVid()" type="button">End Stream</button><br> 
+        </div>
+        <figure id="arkiv">
+            <img src="/img/Skjermbilde 2021-10-29 152147.jpg" alt="Data">
+        </figure>
+
         <script> 
         var vid = document.getElementById("myVideo"); 
+        
         
         function playVid() { 
           vid.play(); 
@@ -48,7 +53,15 @@
           vid.pause(); 
         } 
         function myFunction() {
-            var x = document.getElementById("myVideo");
+            var x = document.getElementById("divMyVideo");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+  }
+}
+function myFunction2() {
+            var x = document.getElementById("arkiv");
             if (x.style.display === "none") {
             x.style.display = "block";
             } else {
@@ -56,6 +69,6 @@
   }
 }
         </script> 
-        </div>
+        
         </body> 
         </html>
